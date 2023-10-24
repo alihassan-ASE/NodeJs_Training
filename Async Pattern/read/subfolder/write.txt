@@ -1,1 +1,0 @@
-This Text is from other file: This is promise read file

@@ -1,1 +1,1 @@
-This Text is from other file: This is promise read file
+This Text is from other file: This is Promise read file This is new text

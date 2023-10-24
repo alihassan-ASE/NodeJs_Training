@@ -1,5 +1,4 @@
 const fs = require('fs');
-const { resolve } = require('path');
 
 // Promise Setup
 
@@ -49,3 +48,21 @@ readFilePromise('./read/subfolder/text.txt', 'utf8')
     .catch((err)=>{
         console.log(err);
     })
+
+// Reading file using fs.promise.readfile(path, [,option])
+
+const {readFile, writeFile} = require('fs/promises');
+const path = require('path');
+async function readingFile(){
+    try{
+        const filePath = path.join('./read/subfolder/text.txt');
+        const usingPromise = await readFile(filePath, 'utf-8');
+        await writeFile('./read/subfolder/write.txt', ' This is new text', {flag: 'a'});
+        console.log('using Fs Promise', usingPromise);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+
+readingFile();

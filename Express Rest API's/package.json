@@ -1,19 +1,17 @@
 {
-  "name": "stream",
+  "name": "project_01",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "express-status-monitor": "^1.3.4"
+    "express": "^4.18.2"
   }
 }
